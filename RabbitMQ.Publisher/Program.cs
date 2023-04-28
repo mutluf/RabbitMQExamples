@@ -21,3 +21,13 @@ channel.BasicPublish(exchange:"", routingKey:"example-rabbit", body:message);
 
 Console.Read();
 
+
+
+//durability
+//channel.QueueDeclare(queue: "example-rabbit", exclusive: false, durable:true);
+//IBasicProperties properties= channel.CreateBasicProperties();
+//properties.Persistent= true;
+
+//channel.BasicPublish(exchange: "", routingKey: "example-rabbit", body: message,basicProperties:properties);
+
+

@@ -7,7 +7,7 @@ using System.Text;
 
 //bağlantı oluşturma
 ConnectionFactory factory = new();
-factory.Uri = new("amqps://odsbstrb:WqzIHX3r_dzHwhJuO6uDjMa2kasPZVnQ@cow.rmq2.cloudamqp.com/odsbstrb");
+factory.Uri = new("key");
 
 //bağlantı aktifleştirme ve kanal açma
 using IConnection connection = factory.CreateConnection();
